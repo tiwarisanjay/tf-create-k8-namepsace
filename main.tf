@@ -8,3 +8,8 @@ resource "kubernetes_namespace" "example" {
     name = "my-first-namespace"
   }
 }
+terraform {
+  backend "local" {
+    path = "/tmp/tfstat/terraform.tfstate"
+  }
+}
