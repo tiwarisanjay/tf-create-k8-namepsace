@@ -5,6 +5,11 @@ provider "kubernetes" {
 
 resource "kubernetes_namespace" "example" {
   metadata {
-    name = "my-first-namespace"
+    name = var.name
+  }
+}
+terraform {
+  backend "local" {
+    path = "/tmp/terraform.tfstate"
   }
 }
