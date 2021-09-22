@@ -10,6 +10,6 @@ resource "kubernetes_namespace" "example" {
 }
 terraform {
   backend "local" {
-    path = "/tmp/tfstat/${var.client}.tfstate"
+    path = "/tmp/tfstat/client1.tfstate"
   }
 }
