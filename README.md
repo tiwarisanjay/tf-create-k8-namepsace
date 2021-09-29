@@ -1,3 +1,3 @@
 # tf-create-k8-namepsace
-Create K8 NameSpace
-Update for another run
+Create K8 NameSpace 
+Update for run
